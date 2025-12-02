@@ -36,12 +36,16 @@ export const AboutVovinamSection: React.FC = () => {
           </a>
         </div>
 
-        <div className="aspect-video rounded-3xl bg-slate-200 shadow-md overflow-hidden">
-          {/* Tu peux intégrer une vidéo YouTube ici */}
-          <div className="h-full w-full flex items-center justify-center text-slate-500 text-sm">
-            Espace vidéo / démonstration Vovinam
-          </div>
+        <div className="aspect-video rounded-3xl overflow-hidden shadow-lg border border-slate-200 bg-black">
+          <iframe
+            className="w-full h-full"
+            src="https://www.youtube.com/embed/C_IglJ0LUs8"
+            title="Démonstration Vovinam Viet Vo Dao"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
         </div>
+
       </div>
     </section>
   );
