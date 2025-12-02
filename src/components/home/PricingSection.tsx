@@ -32,7 +32,15 @@ export const PricingSection: React.FC = () => {
       <div className="mx-auto max-w-6xl px-4">
         {/* Titre */}
         <div className="text-center mb-10">
-          <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">
+          <h2
+            className="
+              text-3xl sm:text-2xl 
+              font-semibold 
+              tracking-wide 
+              text-slate-700 
+              uppercase
+            "
+          >
             Tarifs & inscription
           </h2>
           <p className="mt-2 text-sm sm:text-base text-slate-600 max-w-2xl mx-auto">
