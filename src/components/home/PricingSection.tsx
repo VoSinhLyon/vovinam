@@ -28,7 +28,10 @@ const plans = [
 
 export const PricingSection: React.FC = () => {
   return (
-    <section id="tarifs" className="py-12 sm:py-16 bg-slate-50">
+    <section
+  id="tarifs"
+  className="py-12 sm:py-16 bg-slate-50 scroll-mt-24"
+    >
       <div className="mx-auto max-w-6xl px-4">
         {/* Titre */}
         <div className="text-center mb-10">
