@@ -9,6 +9,7 @@ import { AboutVovinamSection } from "@/components/home/AboutVovinamSection";
 import { NewsSection } from "@/components/home/NewsSection";
 import { GallerySection } from "@/components/home/GallerySection";
 import { TrialCTASection } from "@/components/home/TrialCTASection";
+import { PricingSection } from "@/components/home/PricingSection";
 
 export default function HomePage() {
   return (
@@ -19,6 +20,7 @@ export default function HomePage() {
       <AudienceSection />
       <TeachersSection />
       <AboutVovinamSection />
+      <PricingSection />
       <NewsSection />
       <GallerySection />
       <TrialCTASection />
