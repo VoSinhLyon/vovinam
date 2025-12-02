@@ -24,7 +24,7 @@ export const BackToTop: React.FC = () => {
       onClick={scrollTop}
       className="
         fixed bottom-5 right-5 z-50
-        bg-blue-700 text-white
+        bg-yellow-700 text-white
         p-3 rounded-full shadow-lg
         hover:bg-blue-800 transition-all
         flex items-center justify-center
