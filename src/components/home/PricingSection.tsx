@@ -30,7 +30,7 @@ export const PricingSection: React.FC = () => {
   return (
     <section
   id="tarifs"
-  className="py-12 sm:py-16 bg-slate-50 scroll-mt-24"
+  className="py-8 sm:py-12 bg-slate-50 scroll-mt-24"
     >
       <div className="mx-auto max-w-6xl px-4">
         {/* Titre */}
@@ -66,9 +66,9 @@ export const PricingSection: React.FC = () => {
                 .join(" ")}
             >
               {plan.highlight && (
-                <div className="absolute top-4 right-4 rounded-full bg-blue-700 text-[10px] font-semibold text-white px-3 py-1">
-                  Plus demandé
-                </div>
+                <span className="absolute top-4 right-4 bg-blue-700 text-white text-xs font-semibold px-3 py-1 rounded-full shadow">
+                    Plus demandé
+                </span>
               )}
 
               <h3 className="text-base sm:text-lg font-semibold text-slate-900">
