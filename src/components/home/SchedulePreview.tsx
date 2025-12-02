@@ -57,10 +57,6 @@ export const SchedulePreview: React.FC = () => {
             </tbody>
           </table>
         </div>
-
-        <p id="tarifs" className="mt-3 text-xs text-slate-500">
-          Détail des horaires, niveaux et tarifs disponibles sur demande ou en cours d’année.
-        </p>
       </div>
     </section>
   );
