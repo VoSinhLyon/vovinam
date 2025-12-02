@@ -1,22 +1,57 @@
-// src/pages/galerie.tsx
 import React, { useState } from "react";
+import fs from "fs";
+import path from "path";
+import type { GetStaticProps, InferGetStaticPropsType } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { SiteLayout } from "@/components/layout/SiteLayout";
 
 type Photo = {
-  id: number;
   src: string;
   alt: string;
 };
 
-const photos: Photo[] = Array.from({ length: 10 }).map((_, i) => ({
-  id: i,
-  src: `/images/gallery/${i + 1}.jpg`, // 1.jpg → 18.jpg dans /public/images/gallery
-  alt: `Photo du club ${i + 1}`,
-}));
+type GalleryPageProps = {
+  photos: Photo[];
+};
 
-export default function GaleriePage() {
+// 🔁 Récupère tous les fichiers d'images du dossier public/images/gallery
+export const getStaticProps: GetStaticProps<GalleryPageProps> = async () => {
+  const galleryDir = path.join(process.cwd(), "public", "images", "gallery");
+
+  let photos: Photo[] = [];
+
+  if (fs.existsSync(galleryDir)) {
+    const files = fs.readdirSync(galleryDir);
+
+    photos = files
+      .filter((file) => /\.(jpe?g|png|webp|avif)$/i.test(file)) // garde uniquement les images
+      .sort() // tri alpha (optionnel)
+      .map((file) => {
+        // petit alt automatique à partir du nom de fichier
+        const nameWithoutExt = file.replace(/\.[^.]+$/, "");
+        const alt =
+          "Photo du club " +
+          nameWithoutExt
+            .replace(/[-_]/g, " ")
+            .replace(/\s+/g, " ")
+            .trim();
+
+        return {
+          src: `/images/gallery/${file}`,
+          alt,
+        };
+      });
+  }
+
+  return {
+    props: { photos },
+  };
+};
+
+export default function GaleriePage({
+  photos,
+}: InferGetStaticPropsType<typeof getStaticProps>) {
   const [selected, setSelected] = useState<Photo | null>(null);
 
   return (
@@ -35,8 +70,8 @@ export default function GaleriePage() {
                 </h1>
                 <p className="mt-2 text-sm sm:text-base text-slate-600 max-w-2xl">
                   Entraînements, passages de grades, démonstrations, stages et
-                  moments de convivialité : un aperçu de la pratique du
-                  Vovinam Viet Vo Dao à Lyon.
+                  moments de convivialité : un aperçu de la pratique du Vovinam
+                  Viet Vo Dao à Lyon.
                 </p>
               </div>
 
@@ -52,9 +87,9 @@ export default function GaleriePage() {
 
             {/* Grille de photos */}
             <div className="grid gap-3 sm:gap-4 md:grid-cols-3">
-              {photos.map((photo) => (
+              {photos.map((photo, index) => (
                 <button
-                  key={photo.id}
+                  key={photo.src + index}
                   type="button"
                   onClick={() => setSelected(photo)}
                   className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-slate-50 group"
@@ -66,7 +101,6 @@ export default function GaleriePage() {
                     className="object-cover group-hover:scale-[1.03] transition-transform duration-200"
                     sizes="(max-width: 768px) 100vw, 33vw"
                   />
-                  {/* Overlay léger au survol */}
                   <div className="absolute inset-0 bg-slate-900/0 group-hover:bg-slate-900/10 transition-colors" />
                 </button>
               ))}
