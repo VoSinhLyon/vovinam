@@ -5,7 +5,7 @@ const plans = [
     label: "Enfants (6–12 ans)",
     highlight: false,
     price: "105 €/an", // 💡 À adapter avec le vrai tarif
-    subtitle: "Licence + cours hebdomadaire",
+    subtitle: "Cotisation annuelle, Licence et assurance",
     items: [
       "Cours adaptés au niveau et à l’âge",
       "Travail de la motricité, du respect et de la confiance",
@@ -122,6 +122,11 @@ export const PricingSection: React.FC = () => {
               </li>
               <li>
                 ✅ Licence et assurance incluses dans l’adhésion.
+              </li>
+              <li>
+                ✅ merci de commander 1 vô phuc (kimono) de couleur bleue et une ceinture
+                (bleu pour les adultes débutants, blanche pour les enfants),
+                avec 1 écusson Vovinam Viet Vo Dao. Le club peut vous conseiller.
               </li>
             </ul>
 
