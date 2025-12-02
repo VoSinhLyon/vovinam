@@ -4,28 +4,28 @@ import Image from "next/image";
 const teachers = [
   {
     name: "Maître Daniel BLOUME",
-    rank: "Ceinture rouge IIIᵉ degré - Noire VIIᵉ Dan (système international)",
+    rank: "Ceinture rouge IIIᵉ degré - Noire VIIᵉ Dang (système international)",
     role: "Maitre",
     bio: "Plus de 50 années de pratique, encadre les cours adultes/ados",
     photo: "/teachers/MaitreDanielBloume.jpg",
   },
   {
     name: "Maître Arnaud Balducci",
-    rank: "Ceinture rouge - Noire IVᵉ Dan (système international)",
+    rank: "Ceinture rouge - Noire IVᵉ Dang (système international)",
     role: "Maitre",
     bio: "Encadre les cours adultes/ados le lundi soir",
     photo: "/teachers/maitrearnaud.JPG",
   },
    {
     name: "Maître Malick",
-    rank: "Ceinture rouge - Noire IVᵉ Dan (système international)",
+    rank: "Ceinture rouge - Noire IVᵉ Dang (système international)",
     role: "Maitre",
     bio: "Encadre les cours adultes/ados",
     photo: "/teachers/MaitreMalick.jpg",
   },
   {
     name: "et les membres du bureau et enseignants",
-    rank: "Président: Mickael Saumon, Secrétaire: Vincent et Trésorier: Martial",
+    rank: "Président: Mickael Somon, Secrétaire: Vincent et Trésorier: Martial",
     bio: "Philippe encadre les cours enfants le vendredi soir",
     photo: "/teachers/philippe.jpg",
   },
