@@ -1,24 +1,18 @@
 import React from "react";
+import Image from "next/image";
 
 const photos = Array.from({ length: 6 }).map((_, i) => ({
   id: i,
-  label: `Photo ${i + 1}`,
+  src: `/images/gallery/${i + 1}.jpg`,
 }));
 
 export const GallerySection: React.FC = () => {
   return (
     <section id="galerie" className="py-8 sm:py-12 bg-slate-50">
       <div className="mx-auto max-w-6xl px-4">
+        {/* Titre */}
         <div className="text-center mb-8">
-          <h2
-            className="
-              text-3xl sm:text-2xl 
-              font-semibold 
-              tracking-wide 
-              text-slate-700 
-              uppercase
-            "
-          >
+          <h2 className="text-3xl sm:text-2xl font-semibold tracking-wide text-slate-700 uppercase">
             En images : la vie du club
           </h2>
           <p className="mt-2 text-sm sm:text-base text-slate-600">
@@ -26,14 +20,20 @@ export const GallerySection: React.FC = () => {
           </p>
         </div>
 
+        {/* Galerie */}
         <div className="grid gap-3 sm:gap-4 md:grid-cols-3">
           {photos.map((photo) => (
             <div
               key={photo.id}
-              className="aspect-[4/3] rounded-2xl bg-slate-200 overflow-hidden flex items-center justify-center text-xs text-slate-500"
+              className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-slate-200"
             >
-              {/* Remplace par de vraies images */}
-              {photo.label}
+              <Image
+                src={photo.src}
+                alt={`Photo ${photo.id + 1}`}
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 33vw"
+              />
             </div>
           ))}
         </div>
