@@ -13,7 +13,7 @@ const teachers = [
     name: "Maître Arnaud Balducci",
     rank: "Ceinture rouge - Noire IVᵉ Dan (système international)",
     role: "Maitre",
-    bio: "Encadre les cours adultes/ados les lundi soir",
+    bio: "Encadre les cours adultes/ados le lundi soir",
     photo: "/teachers/maitrearnaud.JPG",
   },
    {
@@ -26,7 +26,7 @@ const teachers = [
   {
     name: "et les membres du bureau et enseignants",
     rank: "Président: Mickael Saumon, Secrétaire: Vincent et Trésorier: Martial",
-    bio: "Philippe encadre les cours enfants les vendredis soir",
+    bio: "Philippe encadre les cours enfants le vendredi soir",
     photo: "/teachers/philippe.jpg",
   },
 ];
