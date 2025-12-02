@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+/* Tu peux mettre ensuite tes styles globaux si tu veux */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
