@@ -14,7 +14,7 @@ const teachers = [
     rank: "Ceinture rouge - Noire IVᵉ Dan (système international)",
     role: "Maitre",
     bio: "Encadre les cours adultes/ados les lundi soir",
-    photo: "/teachers/MaitreArnaud.jpg",
+    photo: "/teachers/maitrearnaud.JPG",
   },
    {
     name: "Maître Malick",
