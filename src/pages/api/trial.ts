@@ -24,7 +24,7 @@ export default async function handler(
 
   try {
     await resend.emails.send({
-      from: "Vovinam Lyon <onboarding@resend.dev>", // à ajuster selon ton domaine Resend
+      from: "Vovinam Lyon <No_Reply@vovinam-lyon.fr>", // à ajuster selon ton domaine Resend
       to: "contact@vovinam-lyon.fr",                   // là où TU veux recevoir le mail
       replyTo: email,
       subject: `[Cours d’essai] ${name} - ${group || "Groupe non précisé"}`,
