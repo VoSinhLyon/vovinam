@@ -55,21 +55,21 @@ export const PricingSection: React.FC = () => {
         <div className="grid gap-6 lg:grid-cols-3 items-stretch">
           {plans.map((plan) => (
             <article
-              key={plan.label}
-              className={[
-                "rounded-2xl border p-6 flex flex-col shadow-sm bg-white",
-                plan.highlight
-                  ? "border-blue-700 shadow-md relative overflow-hidden"
-                  : "border-slate-200",
-              ]
-                .filter(Boolean)
-                .join(" ")}
+                key={plan.label}
+                className={[
+                    "relative rounded-2xl border p-6 flex flex-col shadow-sm bg-white",
+                    plan.highlight
+                    ? "border-blue-700 shadow-md pt-8"   // 👈 un peu plus de place en haut
+                    : "border-slate-200",
+                ]
+                    .filter(Boolean)
+                    .join(" ")}
             >
               {plan.highlight && (
-                <span className="absolute top-4 right-4 bg-blue-700 text-white text-xs font-semibold px-3 py-1 rounded-full shadow">
+                <span className="absolute -top-3 right-4 bg-blue-700 text-white text-xs font-semibold px-3 py-1 rounded-full shadow">
                     Plus demandé
                 </span>
-              )}
+                )}
 
               <h3 className="text-base sm:text-lg font-semibold text-slate-900">
                 {plan.label}
