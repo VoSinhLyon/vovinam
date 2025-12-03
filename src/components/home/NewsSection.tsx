@@ -7,14 +7,14 @@ const news = [
     excerpt: "Un stage intense avec la présence de plusieurs clubs de la région.",
   },
   {
-    title: "Passage de grades – Résultats",
-    date: "Décembre 2025",
-    excerpt: "Félicitations à tous les élèves pour leur engagement et leur réussite.",
+    title: "Grand Rassemblement Traditionnel - Coupe de France 2026",
+    date: "Mai 2026",
+    excerpt: "le GRT aura lieu le week-end du 23/24 mai 2026, au Centre Sportif de Normandie à Houlgate.",
   },
   {
-    title: "Démonstration – Forum des associations",
-    date: "Septembre 2025",
-    excerpt: "Présentation du Vovinam aux habitants du quartier.",
+    title: "Coupe du Monde 2026 de Vovinam–Việt Võ Đạo",
+    date: "22 zu 26 Juillet 2026",
+    excerpt: "la 7e Coupe du Monde de Vovinam–Việt Võ Đạo aura lieu à Paris",
   },
 ];
 
@@ -36,7 +36,7 @@ export const NewsSection: React.FC = () => {
               Actualités du club
             </h2>
             <p className="mt-2 text-sm sm:text-base text-slate-600">
-              Stages, passages de grades, démonstrations et événements.
+              Evénements, stages, passages de grades, et démonstrations.
             </p>
           </div>
         </div>
