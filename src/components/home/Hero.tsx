@@ -90,7 +90,7 @@ export const Hero: React.FC = () => {
           {/* PHOTO */}
           <div className="aspect-video rounded-3xl overflow-hidden shadow-card border border-slate-200/70 relative">
             <Image
-              src="/images/VVD-1-2-scaled.jpg"
+              src="/images/2.jpg"
               alt="Entraînement Vovinam Lyon"
               fill
               className="object-cover"
