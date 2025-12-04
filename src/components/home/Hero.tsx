@@ -22,7 +22,7 @@ export const Hero: React.FC = () => {
 
   {/* Titre principal */}
   <span className="block">
-    <span className="text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-[0.16em] uppercase text-slate-600">
+    <span className="text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-[0.16em] uppercase text-slate-500">
       VOVINAM
     </span>
     <span className="ml-2 text-xl sm:text-2xl lg:text-3xl font-medium text-slate-700">
@@ -58,7 +58,7 @@ export const Hero: React.FC = () => {
           </div>
 
           <p className="mt-3 text-xs text-slate-500">
-            ✅ Cours enfants, ados et adultes – débutants bienvenus
+            Cours enfants, ados et adultes – débutants bienvenus
           </p>
         </div>
 
