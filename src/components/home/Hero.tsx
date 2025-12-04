@@ -26,7 +26,7 @@ export const Hero: React.FC = () => {
       VOVINAM
     </span>
     <span className="ml-2 text-xl sm:text-2xl lg:text-3xl font-medium text-slate-700">
-      Việt Võ <span className="text-red-700">Đạo</span>
+      Việt Võ Đạo
     </span>
   </span>
 
