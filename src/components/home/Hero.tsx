@@ -14,47 +14,25 @@ export const Hero: React.FC = () => {
           </div>
 
           {/* TITRE */}
-          <h1 className="mt-1 text-slate-900 leading-tight">
+<h1 className="mt-1 text-slate-900 leading-tight">
   {/* Ligne au-dessus */}
   <span className="block text-sm sm:text-base text-slate-500 mb-2">
     Le Club de Lyon et de sa région
   </span>
 
-  {/* Ligne principale */}
-  <span className="block text-2xl sm:text-3xl lg:text-4xl flex items-center gap-[4px]">
-    {/* Badge VOVINAM */}
-  <span
-  className="
-    inline-flex items-center
-    uppercase tracking-[0.12em] text-[0.95em]
-    font-bold
-    bg-[#ffb400]
-    text-slate-800
-    border border-[#0f1b2b]
-    px-4 py-1
-    rounded-[4px]
-  "
->
-  VOVINA<span className="text-red-600 tracking-[-0.015em]">M</span>
-</span>
-
-    {/* Việt Võ Đạo gris/bleuté */}
-    <span className="inline-flex items-center
-                  tracking-[0.05em] text-[0.95em]
-                  font-semibold
-                  bg-red-600
-                  text-white
-                  border border-[#0f1b2b]
-                  px-3 py-1
-                  rounded-[4px]
-                "
-              >
-                Việt Võ Đạo
+  {/* Titre principal */}
+  <span className="block">
+    <span className="text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-[0.16em] uppercase text-slate-600">
+      VOVINAM
+    </span>
+    <span className="ml-2 text-xl sm:text-2xl lg:text-3xl font-medium text-slate-700">
+      Việt Võ <span className="text-red-700">Đạo</span>
     </span>
   </span>
+
+  {/* Liseré SOUS le titre → sur une nouvelle ligne */}
+  <span className="block mt-2 h-[3px] w-28 rounded-full bg-gradient-to-r from-blue-600 via-[#f2a900] to-red-600" />
 </h1>
-
-
 
           <p className="mt-4 text-sm sm:text-base text-slate-600">
             Un art martial vietnamien complet pour développer{" "}
