@@ -30,7 +30,7 @@ export const PricingSection: React.FC = () => {
   return (
     <section
   id="tarifs"
-  className="py-8 sm:py-12 bg-slate-50 scroll-mt-24"
+  className="py-2 sm:py-6 bg-slate-50 scroll-mt-24"
     >
       <div className="mx-auto max-w-6xl px-4">
         {/* Titre */}

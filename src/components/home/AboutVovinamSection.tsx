@@ -2,7 +2,7 @@ import React from "react";
 
 export const AboutVovinamSection: React.FC = () => {
   return (
-    <section className="py-12 sm:py-16 bg-slate-50">
+    <section className="py-4 sm:py-10 bg-slate-50">
       <div className="mx-auto max-w-6xl px-4 grid gap-8 md:grid-cols-2 items-center">
         <div>
           <h2

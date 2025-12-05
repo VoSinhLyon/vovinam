@@ -21,11 +21,11 @@ const reasons = [
 
 export const WhySection: React.FC = () => {
   return (
-    <section id="club" className="pt-4 sm:pt-6 pb-10 bg-slate-50">
+    <section id="club" className="pt-2 sm:pt-4 pb-10 bg-slate-50">
       <div className="mx-auto max-w-6xl px-4">
-        <div className="text-center mb-12">
+        <div className="text-center mb-4">
     {/* Liseré bleu-blanc-rouge institutionnel */}
-  <div className="mx-auto flex items-center justify-center gap-0.5 mb-4">
+  <div className="mx-auto flex items-center justify-center gap-0.5 mb-1">
     <span className="h-[2px] w-10 bg-[#0055A4] rounded-sm"></span>   {/* Bleu 🇫🇷 */}
     <span className="h-[2px] w-10 bg-white rounded-sm border border-slate-300"></span> {/* Blanc 🇫🇷 */}
     <span className="h-[2px] w-10 bg-[#EF4135] rounded-sm"></span>   {/* Rouge 🇫🇷 */}

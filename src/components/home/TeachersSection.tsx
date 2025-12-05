@@ -33,7 +33,7 @@ const teachers = [
 
 export const TeachersSection: React.FC = () => {
   return (
-    <section id="enseignants" className="py-12 sm:py-16 bg-white">
+    <section id="enseignants" className="py-2 sm:py-6 bg-white">
       <div className="mx-auto max-w-6xl px-4">
         {/* Titre */}
         <div className="text-center mb-8">

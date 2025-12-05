@@ -17,7 +17,7 @@ const groups = [
 
 export const AudienceSection: React.FC = () => {
   return (
-    <section className="py-12 sm:py-16 bg-slate-50">
+    <section className="py-4 sm:py-6 bg-slate-50">
       <div className="mx-auto max-w-6xl px-4">
         <div className="text-center mb-8">
           <h2

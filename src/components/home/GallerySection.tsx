@@ -10,7 +10,7 @@ const photos = Array.from({ length: 6 }).map((_, i) => ({
 
 export const GallerySection: React.FC = () => {
   return (
-    <section id="galerie" className="py-8 sm:py-12 bg-slate-50">
+    <section id="galerie" className="py-2 sm:py-4 bg-slate-50">
       <div className="mx-auto max-w-6xl px-4">
         <div className="text-center mb-8">
           <h2 className="text-3xl sm:text-2xl font-semibold tracking-wide text-slate-700 uppercase">

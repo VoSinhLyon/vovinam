@@ -8,7 +8,7 @@ const schedule = [
 
 export const SchedulePreview: React.FC = () => {
   return (
-    <section id="horaires" className="py-12 sm:py-16 bg-white border-y border-slate-200">
+    <section id="horaires" className="py-2 sm:py-4 bg-white border-y border-slate-200">
       <div className="mx-auto max-w-6xl px-4">
         <div className="flex flex-col sm:flex-row items-start sm:items-end justify-between gap-4 mb-6">
           <div>

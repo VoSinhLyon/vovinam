@@ -20,7 +20,7 @@ const news = [
 
 export const NewsSection: React.FC = () => {
   return (
-    <section id="actus" className="py-8 sm:py-12 bg-white">
+    <section id="actus" className="py-4 sm:py-8 bg-white">
       <div className="mx-auto max-w-6xl px-4">
         <div className="flex flex-col sm:flex-row items-start sm:items-end justify-between gap-4 mb-6">
           <div>
