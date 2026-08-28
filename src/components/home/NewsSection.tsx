@@ -9,12 +9,12 @@ const news = [
   {
     title: "Grand Rassemblement Traditionnel - Coupe de France 2026",
     date: "Mai 2026",
-    excerpt: "le GRT aura lieu le week-end du 23/24 mai 2026, au Centre Sportif de Normandie à Houlgate.",
+    excerpt: "le GRT a eu lieu le week-end du 23/24 mai 2026, au Centre Sportif de Normandie à Houlgate.",
   },
   {
     title: "Coupe du Monde 2026 de Vovinam–Việt Võ Đạo",
-    date: "22 zu 26 Juillet 2026",
-    excerpt: "la 7e Coupe du Monde de Vovinam–Việt Võ Đạo aura lieu à Paris",
+    date: "22 au 26 Juillet 2026",
+    excerpt: "la 7e Coupe du Monde de Vovinam–Việt Võ Đạo a eu lieu à Paris! Plusieurs médailles Or et Argent... les résultats arrivent!",
   },
 ];
 

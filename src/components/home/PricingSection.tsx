@@ -4,23 +4,24 @@ const plans = [
   {
     label: "Enfants (6–12 ans)",
     highlight: false,
-    price: "105 €/an", // 💡 À adapter avec le vrai tarif
+    price: "120 €/an", // 💡 À adapter avec le vrai tarif
     subtitle: "Cotisation annuelle, Licence et assurance",
     items: [
       "Cours adaptés au niveau et à l’âge",
       "Travail de la motricité, du respect et de la confiance",
       "Encadrement par enseignants diplômés et passage de grade",
+      "Bonne humeur et épanouissement au programme",
     ],
   },
   {
     label: "Ados & Adultes (13 ans et +)",
     highlight: true,
-    price: "180 €/an", // 💡 À adapter avec le vrai tarif
+    price: "210 €/an", // 💡 À adapter avec le vrai tarif
     subtitle: " Cotisation annuelle, Licence fédérale et assurance. ",
     items: [
       "Techniques complètes de Vovinam Viet Vo Dao",
       "Self-défense, travail physique et mental",
-      "Préparation aux passages de ceintures",
+      "Préparation aux passages de grade",
       "Passeport sportif de 30€, seulement la 1ère année.",
     ],
   },
