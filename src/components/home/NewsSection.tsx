@@ -1,11 +1,7 @@
 import React from "react";
 
 const news = [
-  {
-    title: "Stage régional – Lyon",
-    date: "Mars 2026",
-    excerpt: "Un stage intense avec la présence de plusieurs clubs de la région.",
-  },
+
   {
     title: "Grand Rassemblement Traditionnel - Coupe de France 2026",
     date: "Mai 2026",
@@ -14,7 +10,12 @@ const news = [
   {
     title: "Coupe du Monde 2026 de Vovinam–Việt Võ Đạo",
     date: "22 au 26 Juillet 2026",
-    excerpt: "la 7e Coupe du Monde de Vovinam–Việt Võ Đạo a eu lieu à Paris! Plusieurs médailles Or et Argent... les résultats arrivent!",
+    excerpt: "la 7e Coupe du Monde de Vovinam–Việt Võ Đạo s'est tenue à Paris du 22 au 25 juillet 2026! Près de 325 compétiteurs venus d'une quinzaine de pays se sont rassemblés pour cette 7e édition. De nombreux retours en images et reportages photo sont disponibles en ligne, notamment via la page officielle de Banh Mi Media et sur les réseaux sociaux avec le mot-clé #paris2026",
+  },
+    {
+    title: "Réouverture du Dojo Tronchet la semaine du 7 septembre 2026 – Lyon",
+    date: "Septembre 2026",
+    excerpt: "N'hésitez pas à venir nombreux pour une première séance de remise en condition!",
   },
 ];
 
