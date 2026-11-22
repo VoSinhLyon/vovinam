@@ -1,21 +1,23 @@
 import React from "react";
 
 const news = [
-
   {
-    title: "Grand Rassemblement Traditionnel - Coupe de France 2026",
-    date: "Mai 2026",
-    excerpt: "le GRT a eu lieu le week-end du 23/24 mai 2026, au Centre Sportif de Normandie à Houlgate.",
+    title: "Passages de grade régionaux",
+    date: "23 janvier et 5 juin 2027",
+    excerpt:
+      "Les prochains passages de grade régionaux auront lieu à Millery, en Auvergne-Rhône-Alpes, les 23 janvier et 5 juin 2027.",
   },
   {
-    title: "Coupe du Monde 2026 de Vovinam–Việt Võ Đạo",
-    date: "22 au 26 Juillet 2026",
-    excerpt: "la 7e Coupe du Monde de Vovinam–Việt Võ Đạo s'est tenue à Paris du 22 au 25 juillet 2026! Près de 325 compétiteurs venus d'une quinzaine de pays se sont rassemblés pour cette 7e édition. De nombreux retours en images et reportages photo sont disponibles en ligne, notamment via la page officielle de Banh Mi Media et sur les réseaux sociaux avec le mot-clé #paris2026",
+    title: "Tournoi International TND",
+    date: "30 et 31 janvier 2027",
+    excerpt:
+      "Le Tournoi International TND se déroulera les 30 et 31 janvier 2027 à Paris, en Île-de-France.",
   },
-    {
-    title: "Réouverture du Dojo Tronchet la semaine du 7 septembre 2026 – Lyon",
-    date: "Septembre 2026",
-    excerpt: "N'hésitez pas à venir nombreux pour une première séance de remise en condition!",
+  {
+    title: "Grand Rassemblement Traditionnel",
+    date: "Du 15 au 17 mai 2027",
+    excerpt:
+      "Rendez-vous en Auvergne-Rhône-Alpes pour la 67ᵉ Fête de la Fondation, la Coupe de France et l’examen national de grades, du 15 au 17 mai 2027.",
   },
 ];
 
